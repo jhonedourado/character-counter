@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 100vh;
+}
+
+header {
+  width: 0;
+  height: 4px;
+  background: #0C46E8;
+  animation-name: loading-header;
+  animation-duration: .5s;
+  animation-delay: .2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes loading-header {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  max-width: 900px;
+  padding: 40px 5%;
+}
+
+.container h1 {
+  width: 100%;
+  color: #2f2f2f;
+  font-size: 3.2em;
+  font-weight: 700;
+  text-align: left;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.field label {
+  font-size: 1.4em;
+}
+
+.field textarea {
+  width: 100%;
+  padding: 16px;
+  background: #f2f2f2;
+  border: solid 1px #f2f2f2;
+  border-radius: 4px;
+  font-size: 1.2em;
+}
+
+.field textarea:focus {
+  border: solid 1px #0C46E8;
+}
+
+.counters {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: flex-start;
+  gap: 8px;
+  width: 100%;
+  font-size: 1.2em;
+}
+
+.counters p {
+  padding: 8px;
+  background: #f2f2f2;
+  border-bottom: solid 1px #0C46E8;
+  border-radius: 4px;
+}
+
+.counters span {
+  font-weight: 600;
+}
+
+footer p {
+  width: 100%;
+  margin-bottom: 8px;
+  color: #a2a2a2;
+  text-align: center;
+}
+
+footer a {
+  color: #a2a2a2;
+}
+
+.shape {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.shape svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 32px;
+}
+
+.shape .shape-fill {
+  fill: #0C46E8;
+}
