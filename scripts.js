@@ -1,16 +1,16 @@
 const input = document.querySelector("#input");
-const counterCharSpace = document.querySelector(".charSpace");
-const counterCharNoSpace = document.querySelector(".charNoSpace");
+const counterCharactersWithSpaces = document.querySelector(".charactersWithSpaces");
+const counterCharactersNoSpaces = document.querySelector(".charactersNoSpaces");
 const counterWords = document.querySelector(".words");
 
 input.addEventListener("input", () => {
-  let countCharSpace = 0;
-  countCharSpace = input.value.length;
-  counterCharSpace.textContent = countCharSpace;
+  let countCharactersWithSpaces = 0;
+  countCharactersWithSpaces = input.value.length;
+  counterCharactersWithSpaces.textContent = countCharactersWithSpaces;
 
-  let countCharNoSpace = 0;
-  countCharNoSpace = input.value.replace(/\s/g,'').length;
-  counterCharNoSpace.textContent = countCharNoSpace;
+  let countCharactersNoSpaces = 0;
+  countCharactersNoSpaces = input.value.replace(/\s/g,'').length;
+  counterCharactersNoSpaces.textContent = countCharactersNoSpaces;
 
   let countWords = 0;
   const words = input.value.trim().split(/\s+/);
