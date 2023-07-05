@@ -16,4 +16,4 @@ input.addEventListener("input", () => {
   const words = input.value.trim().split(/\s+/);
   countWords = input.value.trim() === "" ? 0 : words.length;
   counterWords.textContent = countWords;
-});
+})
