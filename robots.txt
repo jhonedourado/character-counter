@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jhonedourado.github.io/character-counter/sitemap.xml
