@@ -2,6 +2,7 @@ const input = document.querySelector("#input");
 const counterCharactersWithSpaces = document.querySelector(".charactersWithSpaces");
 const counterCharactersNoSpaces = document.querySelector(".charactersNoSpaces");
 const counterWords = document.querySelector(".words");
+const buttonMessage = document.querySelector(".message");
 
 input.addEventListener("input", () => {
   let countCharactersWithSpaces = 0;
@@ -16,4 +17,8 @@ input.addEventListener("input", () => {
   const words = input.value.trim().split(/\s+/);
   countWords = input.value.trim() === "" ? 0 : words.length;
   counterWords.textContent = countWords;
+})
+
+buttonMessage.addEventListener("click", () => {
+  buttonMessage.textContent = "Jesus te ama!";
 })
