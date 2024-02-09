@@ -1,6 +1,6 @@
-### Contador de Caracteres
+### Character Counter
 <hr>
-O Contador de Caracteres é uma simples aplicação web que conta o número de caracteres e palavras de um texto.
+O Character Counter é uma simples aplicação web que conta o número de caracteres e palavras de um texto.
 
 ### Tecnologias utilizadas
 <div style="display: inline">
