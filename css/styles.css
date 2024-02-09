@@ -18,7 +18,7 @@
 
   --hover-efect: brightness(1.7);
   --click-efect: brightness(.3);
-  --transitions: 200ms;
+  --transition: 200ms;
 
   font-size: 62.5%;
 }
@@ -121,7 +121,7 @@ body {
 
 .buttons button {
   background: transparent;
-  transition: var(--transitions);
+  transition: var(--transition);
 }
 
 .buttons button:hover {
