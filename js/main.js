@@ -1,24 +1,19 @@
-const input = document.querySelector("#input");
-const counterCharactersWithSpaces = document.querySelector(".charactersWithSpaces");
-const counterCharactersNoSpaces = document.querySelector(".charactersNoSpaces");
+const textarea = document.querySelector("#textarea");
+const counterCharactersWithSpaces = document.querySelector(".characters-with-spaces");
+const counterCharactersNoSpaces = document.querySelector(".characters-no-spaces");
 const counterWords = document.querySelector(".words");
-const buttonMessage = document.querySelector(".message");
 
-input.addEventListener("input", () => {
+textarea.addEventListener("input", () => {
   let countCharactersWithSpaces = 0;
-  countCharactersWithSpaces = input.value.length;
+  countCharactersWithSpaces = textarea.value.length;
   counterCharactersWithSpaces.textContent = countCharactersWithSpaces;
 
   let countCharactersNoSpaces = 0;
-  countCharactersNoSpaces = input.value.replace(/\s/g,'').length;
+  countCharactersNoSpaces = textarea.value.replace(/\s/g,'').length;
   counterCharactersNoSpaces.textContent = countCharactersNoSpaces;
 
   let countWords = 0;
-  const words = input.value.trim().split(/\s+/);
-  countWords = input.value.trim() === "" ? 0 : words.length;
+  const words = textarea.value.trim().split(/\s+/);
+  countWords = textarea.value.trim() === "" ? 0 : words.length;
   counterWords.textContent = countWords;
-})
-
-buttonMessage.addEventListener("click", () => {
-  buttonMessage.textContent = "Jesus te ama!";
 })
