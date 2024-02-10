@@ -94,8 +94,11 @@ body {
   background: #2a334d20;
   border-radius: 8px;
   border-bottom: solid 1px var(--primary-color);
-  font-size: var(--font-scale-small);
   text-align: center;
+}
+
+.counter small {
+  font-size: var(--font-scale-small);
 }
 
 .counter span {
