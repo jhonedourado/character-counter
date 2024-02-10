@@ -66,6 +66,7 @@ body {
   width: 100%;
   margin-bottom: 24px;
   padding: 24px 16px;
+  color: var(--primary-color);
   border: solid 1px var(--primary-color);
   border-radius: 8px;
   text-align: left;
